@@ -4,6 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Editor</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/8c8f8c0d98.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <main class="w-9/12 p-8 mx-auto my-8 bg-blue-300 rounded-lg">
+      <h1 class="my-4 text-4xl text-center">Text Editor</h1>
+      <div
+        class="flex flex-col items-center justify-center p-4 bg-blue-100 border border-black"
+      >
+        <div class="grid grid-cols-1 gap-10 mb-4 md:grid-cols-3">
+          <div class="">
+            <button class="btn"><i class="fa-solid fa-bold"></i></button>
+            <button><i class="px-4 fa-solid fa-italic"></i></button>
+            <button><i class="fa-solid fa-underline"></i></button>
+          </div>
+          <div>
+            <button><i class="fa-solid fa-align-left"></i></button>
+            <button><i class="px-4 fa-solid fa-align-center"></i></button>
+            <button><i class="fa-solid fa-align-right"></i></button>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <input type="number" name="" id="" class="w-10" />
+            <input type="color" name="" id="" />
+          </div>
+        </div>
+        <hr class="h-[2px] w-full bg-black mb-4" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="w-full mx-auto h-[400px]"
+        ></textarea>
+      </div>
+    </main>
+  </body>
 </html>
